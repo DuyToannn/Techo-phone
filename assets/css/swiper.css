@@ -34,3 +34,19 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+  .btn-next-prev {
+    position: absolute;
+    top: -36px;
+    right: 0;
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 18px !important;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .swiper-button-prev {
+    left: -57px !important;
+  }
