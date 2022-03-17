@@ -40,12 +40,10 @@
                             <div id="contact-link">
                                 <ul>
                                     <li class="contact_phone">
-
                                         <i class="fa fa-phone"></i>
                                         Call us free: <span>000-943-446-000</span>
                                     </li>
                                     <li>
-
                                         <i class="fa fa-envelope"></i>
                                         Email: <span>sales@yoursite.com</span>
                                     </li>
@@ -245,24 +243,8 @@
                                             <select name="category_filter" id="category_filter" class="form-control">
                                                 <option value="0" selected="selected">All categories</option>
                                                 <option value="2">-- Home</option>
-                                                <option value="10">
-                                                    ---- Chair
-                                                </option>
-                                                <option value="13">
-                                                    ------ Bakeware
-                                                </option>
                                             </select>
-                                        </div>
-                                        <input type="hidden" name="controller" value="search">
-                                        <input type="hidden" name="orderby" value="position">
-                                        <input type="hidden" name="orderway" value="desc">
-                                        <span role="status" aria-live="polite"
-                                            class="ui-helper-hidden-accessible"></span><input
-                                            class="search_query form-control ui-autocomplete-input" type="text"
-                                            id="search_query_top" name="search_query" value=""
-                                            placeholder="Search entire store here ..." autocomplete="off">
-                                        <button type="submit" name="submit_search" class="btn button-search">
-                                        </button>
+                                        </div><input class="search_query form-control" type="text" id="search_query_top" placeholder="Search entire store here .."/>
                                     </form>
                                 </div>
                             </div>
@@ -275,6 +257,100 @@
             <!-- MEGAMENU -->
 
         </div>
+        <section id="header_mobile_menu">
+            <div class="container">
+                <div class="fieldmm-nav col-sm-12 col-xs-12">
+                    <div class="menu-mb-nav">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                        <div id="_mobile_cart_ft" class="sticky_top">
+                            <div class="blockcart cart-preview inactive" data-refresh-url="//demo.fieldthemes.com/techo/ps17/default/en/module/ps_shoppingcart/ajax">
+                                <div class="click-cart">
+                                    <span class="shopping-cart">
+                                        <span class="icon-handbag"><i class="fa-light fa-basket-shopping-simple"></i></span>
+                                        <span class="title_font text">Cart: <span class="cart-total-top">
+                                                $0.00</span></span>
+                                    </span>
+                                </div>
+                                <div class="cart_top_ajax" style="">
+                                    <div class="card-block-top" style="border-top:none">
+                                        There are no more items in your cart
+                                    </div>
+                                    <div class="card-block-top">
+                                        <div class="totals-top">
+                                            <span class="label-top">Total (tax excl.)</span>
+                                            <span class="value-top price">$0.00</span>
+                                        </div>
+                                        <div class="totals-top">
+                                            <span class="label-top">Taxes</span>
+                                            <span class="value-top price">$0.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-block-top">
+                                        <a href="//demo.fieldthemes.com/techo/ps17/default/en/cart?action=show" class="view-cart">View Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        $(document).ready(function(){
+                            $('.menu-mb-nav > span').click(function(){
+                                $('.megamenu-mb').slideToggle()
+                            })
+                        })
+                    </script>
+                    <script>
+                        $(document).ready(function () {
+                            $(".show-sub-menu-btn").click(function () {
+                                $(this).parent().find('.menu_items-mb').slideToggle(300);
+                                $(this).parent().siblings().find('.menu_items-mb').slideUp(300);
+                            })
+                        })  
+                    </script>
+                    <div class="megamenu-mb">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                                <i class="fa-solid fa-plus show-sub-menu-btn"></i>
+                                <ul class="menu_items-mb">
+                                    <li><a href="#">Home2</a></li>
+                                    <li><a href="#">Home2</a></li>
+                                    <li><a href="#">Home2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">CHAIR</a>
+                                <i class="fa-solid fa-plus show-sub-menu-btn"></i>
+                                <ul class="menu_items-mb">
+                                    <li><a href="#">Home2</a></li>
+                                    <li><a href="#">Home2</a></li>
+                                    <li><a href="#">Home2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">computer</a>
+                                <i class="fa-solid fa-plus show-sub-menu-btn"></i>
+                                <ul class="menu_items-mb">
+                                    <li><a href="#">Home2</a></li>
+                                    <li><a href="#">Home2</a></li>
+                                    <li><a href="#">Home2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">shop</a>
+                                <i class="fa-solid fa-plus show-sub-menu-btn"></i>
+                                <ul class="menu_items-mb">
+                                    <li><a href="#">Home2</a></li>
+                                    <li><a href="#">Home2</a></li>
+                                    <li><a href="#">Home2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="header-bottom">
             <div class="header_menu">
                 <div class="container">
@@ -583,10 +659,10 @@
             </div>
         </div>
     </section>
-    <!-- MEGAMENU -->
 
+    <!-- MEGAMENU -->
     <!-- SLIDER SHOW -->
-    <section class="slider-banner">
+    <section class="slider-banner" style="display: none;">
         <div class="swiper banner-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -617,8 +693,7 @@
             var swiper = new Swiper(".banner-slider", {});
         </script>
     </section>
-
-    <section id="staticbanner">
+    <section id="staticbanner"style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="left_banner">
@@ -657,7 +732,7 @@
             </div>
         </div>
     </section>
-    <section class="product_top">
+    <section class="product_top"style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-xs-12">
@@ -1623,8 +1698,7 @@
             </div>
         </div>
     </section>
-
-    <section id="staticbanner2">
+    <section id="staticbanner2"style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
@@ -1654,8 +1728,7 @@
             </div>
         </div>
     </section>
-
-    <section class="tab-category-container-slider">
+    <section class="tab-category-container-slider"style="display: none;">
         <div class="container">
             <div class="block-title">
                 <h4 class="title_font title_block"><span>new arrival</span></h4>
@@ -1988,7 +2061,7 @@
             </script>
         </div>
     </section>
-    <section class="tabcontent fieldFullWidth block ">
+    <section class="tabcontent fieldFullWidth block "style="display: none;">
         <div class="container">
             <div class="row">
                 <div id="best-sellers_block" class="col-md-4 col-sm-12 col-xs-12 vertical_mode block clearfix">
@@ -2939,7 +3012,7 @@
             </div>
         </div>
     </section>
-    <div id="static_conact_bottom" class="block" style="padding-bottom: 2000px;">
+    <div id="static_conact_bottom" class="block"style="display: none;">
         <div class="container">
             <div class="box_static">
                 <div class="stt_icon">
@@ -2981,6 +3054,320 @@
             </div>
         </div>
     </div>
+    <section class="home-blog smart-blog-home-post"style="display: none;">
+        <div class="container">
+            <div class="block-title">
+                <h4 class="title_block title_font"><span>Our Blog</span></h4>
+            </div>
+            <div class="blog-item" style="position: relative;">
+                <div class="swiper blog-home-slider" style="position: unset;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="news-block-item">
+                                <div class="img-blog"><a href="#"><img
+                                            src="https://demo.fieldthemes.com/techo/ps17/default/modules/smartblog/images/4-home-default.jpg"
+                                            alt=""></a></div>
+                                <div class="blog-name">
+                                    <div class="info_content">
+                                        <div class="author_blog">
+                                            Posted by:<span> FieldThemes</span>
+                                        </div>
+                                        <div class="date_blog">
+                                            - Date:
+                                            <span class="block_date_post1"> 1/</span>
+                                            <span class="block_date_post">03/</span>
+                                            <span class="block_date_post2">2019
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="sds_post_title"><a href="#">Typi non habent claritatem insitam</a>
+                                        </h3>
+                                        <p>Duis autem vel eum iriure dolor in hendrerit in ulputate velit esse molestie
+                                            consequat...</p>
+                                    </div>
+                                    <div class="btn-blog-viewall">
+                                        <a href="#" class="r_more">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-block-item">
+                                <div class="img-blog"><a href="#"><img
+                                            src="https://demo.fieldthemes.com/techo/ps17/default/modules/smartblog/images/4-home-default.jpg"
+                                            alt=""></a></div>
+                                <div class="blog-name">
+                                    <div class="info_content">
+                                        <div class="author_blog">
+                                            Posted by:<span> FieldThemes</span>
+                                        </div>
+                                        <div class="date_blog">
+                                            - Date:
+                                            <span class="block_date_post1"> 1/</span>
+                                            <span class="block_date_post">03/</span>
+                                            <span class="block_date_post2">2019
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="sds_post_title"><a href="#">Typi non habent claritatem insitam</a>
+                                        </h3>
+                                        <p>Duis autem vel eum iriure dolor in hendrerit in ulputate velit esse molestie
+                                            consequat...</p>
+                                    </div>
+                                    <div class="btn-blog-viewall">
+                                        <a href="#" class="r_more">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-block-item">
+                                <div class="img-blog"><a href="#"><img
+                                            src="https://demo.fieldthemes.com/techo/ps17/default/modules/smartblog/images/4-home-default.jpg"
+                                            alt=""></a></div>
+                                <div class="blog-name">
+                                    <div class="info_content">
+                                        <div class="author_blog">
+                                            Posted by:<span> FieldThemes</span>
+                                        </div>
+                                        <div class="date_blog">
+                                            - Date:
+                                            <span class="block_date_post1"> 1/</span>
+                                            <span class="block_date_post">03/</span>
+                                            <span class="block_date_post2">2019
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="sds_post_title"><a href="#">Typi non habent claritatem insitam</a>
+                                        </h3>
+                                        <p>Duis autem vel eum iriure dolor in hendrerit in ulputate velit esse molestie
+                                            consequat...</p>
+                                    </div>
+                                    <div class="btn-blog-viewall">
+                                        <a href="#" class="r_more">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="news-block-item">
+                                <div class="img-blog"><a href="#"><img
+                                            src="https://demo.fieldthemes.com/techo/ps17/default/modules/smartblog/images/4-home-default.jpg"
+                                            alt=""></a></div>
+                                <div class="blog-name">
+                                    <div class="info_content">
+                                        <div class="author_blog">
+                                            Posted by:<span> FieldThemes</span>
+                                        </div>
+                                        <div class="date_blog">
+                                            - Date:
+                                            <span class="block_date_post1"> 1/</span>
+                                            <span class="block_date_post">03/</span>
+                                            <span class="block_date_post2">2019
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3 class="sds_post_title"><a href="#">Typi non habent claritatem insitam</a>
+                                        </h3>
+                                        <p>Duis autem vel eum iriure dolor in hendrerit in ulputate velit esse molestie
+                                            consequat...</p>
+                                    </div>
+                                    <div class="btn-blog-viewall">
+                                        <a href="#" class="r_more">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-next-prev">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".blog-home-slider", {
+                        spaceBetween: 30,
+                        slidesPerView: 3,
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    <section class="footer-main"style="display: none;">
+        <div class="container">
+            <div class="brand-block">
+                <div class="swiper brandblock">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="item-brand">
+                                <a href="#"><img
+                                        src="https://demo.fieldthemes.com/techo/ps17/default/img/m/6-field_manufacture.jpg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-brand">
+                                <a href="#"><img
+                                        src="https://demo.fieldthemes.com/techo/ps17/default/img/m/9-field_manufacture.jpg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-brand">
+                                <a href="#"><img
+                                        src="https://demo.fieldthemes.com/techo/ps17/default/img/m/6-field_manufacture.jpg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-brand">
+                                <a href="#"><img
+                                        src="https://demo.fieldthemes.com/techo/ps17/default/img/m/7-field_manufacture.jpg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-brand">
+                                <a href="#"><img
+                                        src="https://demo.fieldthemes.com/techo/ps17/default/img/m/6-field_manufacture.jpg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item-brand">
+                                <a href="#"><img
+                                        src="https://demo.fieldthemes.com/techo/ps17/default/img/m/6-field_manufacture.jpg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var swiper = new Swiper(".brandblock", {
+                            slidesPerView: 5,
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="footer-top">
+                <div class="emailblock">
+                    <div class="title_newsletter">
+                        <h4>Sign Up For Newsletters</h4>
+                        <p>Get e-mail updates about our latest shop and special offers.</p>
+                    </div>
+                    <form action="https://demo.fieldthemes.com/techo/ps17/default/en/#footer" method="post">
+                        <div class="input-wrapper">
+                            <input name="email" type="text" value="" placeholder="Your email address...">
+                        </div>
+                        <input class="button-newletter title_font" name="submitNewsletter" type="submit"
+                            value="Subscribe">
+                        <input type="hidden" name="action" value="0">
+                    </form>
+                    <div class="block-social">
+                        <ul>
+                            <li class="button-facebook"><a href="#" target="_blank"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="button-twitter"><a href="#" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="button-googleplus"><a href="#" target="_blank"><i
+                                        class="fa-brands fa-google-plus-g"></i></a></li>
+                            <li class="button-instagram"><a href="#" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-center">
+                <div class="row">
+                    <div class="block-contact col-xs-12 col-sm-6 col-md-3 links bullet">
+                        <div class="title-top">
+                            <h4 class="title_block title_font">Contact us</h4>
+                        </div>
+                        <div class="visible-sm-down">
+                            <div id="footer_contact">
+                                <div class="footer_icon">
+                                    <p>Address: <span> 69 Princess Road,London, Greater London NW1 8JR, UK</span></p>
+                                </div>
+                                <div class="footer_icon">
+                                    <p>Phone: <span>000-943-446-000</span></p>
+                                </div>
+                                <div class="footer_icon fax_info">
+                                    <p> Fax: <span>(+01) 123 456 789</span></p>
+                                </div>
+                                <div class="footer_icon email_info">
+                                    <p> Email: <span>sales@yoursite.com</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 links wrapper">
+                        <div class="title-top">
+                            <h3 class="title_block title_font myaccount-title">My account</h3>
+                        </div>
+                        <ul class="account-list" id="footer_account_list">
+                            <li><a href="#" title="Personal info" rel="nofollow">Personal info</a></li>
+                            <li><a href="#" title="Orders" rel="nofollow">Orders</a></li>
+                            <li><a href="#" title="Credit slips" rel="nofollow">Credit slips</a></li>
+                            <li><a href="#" title="Addresses" rel="nofollow"> Addresses</a></li>
+                            <li><a class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wishlist-link" href="#"><span
+                                        class="link-item">My wishlists</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 links">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="title-top">
+                                    <h3 class="title_block title_font myaccount-title">Infomation </h3>
+                                </div>
+                                <ul class="account-list" id="footer_account_list">
+                                    <li><a href="#" title="Personal info" rel="nofollow">Personal info</a></li>
+                                    <li><a href="#" title="Orders" rel="nofollow">Orders</a></li>
+                                    <li><a href="#" title="Credit slips" rel="nofollow">Credit slips</a></li>
+                                    <li><a href="#" title="Addresses" rel="nofollow"> Addresses</a></li>
+                                    <li><a class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wishlist-link" href="#"><span
+                                                class="link-item">My wishlists</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="title-top">
+                                    <h3 class="title_block title_font myaccount-title">CUSTOMER SERVICE</h3>
+                                </div>
+                                <ul class="account-list" id="footer_account_list">
+                                    <li><a href="#" title="Personal info" rel="nofollow">Personal info</a></li>
+                                    <li><a href="#" title="Orders" rel="nofollow">Orders</a></li>
+                                    <li><a href="#" title="Credit slips" rel="nofollow">Credit slips</a></li>
+                                    <li><a href="#" title="Addresses" rel="nofollow"> Addresses</a></li>
+                                    <li><a class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wishlist-link" href="#"><span
+                                                class="link-item">My wishlists</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 copyright_left">
+                        <p>Copyright © 2019 <a href="#">TECHO</a>. All Right Reserved.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 payment_right" style="text-align: right;"><a href="#"><img class="img-responsive"
+                                src="https://demo.fieldthemes.com/techo/ps17/default/modules/fieldhtmlblock/images/payment_ft.png"
+                                alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="./assets/main/main.js"></script>
 

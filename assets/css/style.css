@@ -12,6 +12,13 @@ ul {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+.header-section {
+  position: sticky;
+  z-index: 9999;
+  top: -211px;
+  background: #fff;
+}
 .header-nav {
   position: relative;
   height: 45px;
@@ -57,6 +64,15 @@ ul {
 .mobile_links {
   position: relative;
   display: inline-block;
+}
+
+#header_mobile_menu {
+  display: none;
+}
+
+.contact_phone span {
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .header-nav .dropdown .expand-more {
@@ -107,6 +123,10 @@ ul {
   font-size: 13px;
 }
 
+.header_menu {
+  background-color: #317ece;
+}
+
 .wishlist_nav2_1 i,
 .checkout_nav i {
   margin-right: 5px;
@@ -131,6 +151,10 @@ ul {
   margin: 0;
   line-height: 137px;
   max-width: 230px;
+}
+
+.sections-contaier {
+  padding: 25px 0px;
 }
 
 .hidden-lg-up {
@@ -356,7 +380,8 @@ form#searchbox {
 }
 
 .v-megamenu > ul > li {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   font-weight: 400;
   text-transform: capitalize;
   font-size: 14px;
@@ -390,10 +415,10 @@ form#searchbox {
   color: #333;
 }
 
-.v-megamenuitem > a:last-child {
+/* .v-megamenuitem > a:last-child {
   position: absolute;
   right: 0;
-}
+} */
 
 .v-megamenu > ul > li div.submenu.bottom-co {
   position: absolute;
@@ -1090,4 +1115,280 @@ ul.tab_cates {
 #static_conact_bottom .box_static_content:hover .fa:after {
   transform: scale(1);
   transition: transform 1s ease 0s;
+}
+
+.smart-blog-home-post .info_content>div {
+  display: inline-block;
+  color: #999;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+
+.smart-blog-home-post .info_content .author_blog span {
+  color: #317ece;
+}
+
+.blog-name .content .sds_post_title a {
+  color: #333;
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.smart-blog-home-post .content p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #666;
+  font-weight: 400;
+}
+
+.smart-blog-home-post .content p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #666;
+  font-weight: 400;
+}
+
+.btn-blog-viewall {
+  display: block;
+  max-width: 115px;
+  text-align: center;
+  margin: 24px auto 0 auto;
+  overflow: hidden;
+  border-radius: 30px;
+  line-height: 34px;
+  background: #333;
+  transition: 0.4s;
+}
+
+.r_more {
+  color: #fff;
+  position: relative;
+  font-size: 13px;
+  text-transform: uppercase;
+  min-width: 115px;
+  text-align: center;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.blog-name {
+  background: transparent;
+  position: static;
+  padding-top: 28px;
+  max-width: 290px;
+  margin: 0 auto
+}
+
+.news-block-item {
+  width: 100%;
+}
+
+.news-block-item:hover .img-blog a img {
+  position: relative
+  ;
+  transform: scale(1.2);
+  transition: transform 0.4s,opacity 0.4s ease-in-out;
+  opacity: .7;
+}
+
+.img-blog a img  {
+  transition: transform 0.4s,opacity 0.4s ease-in-out;
+}
+
+.news-block-item:hover .btn-blog-viewall {
+  background: #317ece;
+  letter-spacing: 2px;
+  transition: 0.4s;
+}
+
+.img-blog {
+  overflow: hidden;
+}
+
+.brand-block {
+  margin-top: 50px;
+  padding: 34px 0;
+  border-top: 1px solid #ebebeb;
+}
+
+.footer-top {
+  padding-top: 50px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.footer-top > div {
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-top .emailblock .title_newsletter {
+  padding-right: 30px;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.footer-top .emailblock .title_newsletter p {
+  color: #666;
+  font-size: 14px;
+  text-transform: none;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.footer-top .emailblock .title_newsletter h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.footer-top .emailblock .title_newsletter h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+
+.footer-top .emailblock form .input-wrapper {
+  float: left;
+}
+
+.footer-top .emailblock form .input-wrapper input {
+  height: 42px;
+  line-height: 42px;
+  min-width: 400px;
+  border: 2px solid #317ece;
+  border-width: 2px 0 2px 2px;
+  padding-left: 20px;
+  text-align: left;
+  border-radius: 30px 0 0 30px;
+  outline:unset;
+}
+
+.footer-top .emailblock form .button-newletter {
+  width: 130px;
+  height: 42px;
+  background: #317ece;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 0 30px 30px 0;
+}
+
+#footer .block-social {
+  text-align: right;
+  float: right;
+}
+
+.footer-center {
+  padding: 50px 0 40px;
+}
+
+.block-social li {
+  font-size: 14px;
+  margin-right: 10px;
+  border: none;
+  background: #fff;
+  border-radius: 3px;
+  width: 41px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  margin: 0 10px 0 0;
+  float: left;
+}
+
+.block-social li a {
+  display: block;
+  height: 100%;
+  white-space: nowrap;
+  text-indent: 0;
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+}
+
+.title-top .title_block {
+  font-size: 16px;
+  color: #333;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 14px;
+  border-bottom: none;
+  display: inline-block;
+  cursor: pointer;
+  width: auto;
+}
+
+.footer_icon {
+  margin-bottom: 17px;
+  display: block;
+}
+
+.footer_icon p {
+  margin: 0;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333;
+  font-size: 16px;
+}
+
+.footer_icon p span {
+  font-weight: 400;
+  color: #666;
+  font-size: 14px;
+  padding-left: 65px;
+  display: block;
+  margin-top: -24px;
+}
+
+.footer-center .links ul li {
+  line-height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-center .links ul li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #317ece;
+  border-radius: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -2.5px;
+  position: absolute;
+}
+
+.links ul a {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 18px;
+}
+
+.footer-bt {
+  background: #ebebeb;
+  padding: 20px 0px ;
+}
+
+.ft_bottom .copyright_left p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
 }
