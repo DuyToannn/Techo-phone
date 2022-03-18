@@ -411,6 +411,10 @@ form#searchbox {
   vertical-align: middle;
 }
 
+.v-megamenu-container .fa-plus {
+  display: none;
+}
+
 .item-icon {
   color: #333;
 }

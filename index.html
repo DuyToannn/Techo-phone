@@ -244,7 +244,8 @@
                                                 <option value="0" selected="selected">All categories</option>
                                                 <option value="2">-- Home</option>
                                             </select>
-                                        </div><input class="search_query form-control" type="text" id="search_query_top" placeholder="Search entire store here .."/>
+                                        </div><input class="search_query form-control" type="text" id="search_query_top"
+                                            placeholder="Search entire store here .." />
                                     </form>
                                 </div>
                             </div>
@@ -263,10 +264,12 @@
                     <div class="menu-mb-nav">
                         <span><i class="fa-solid fa-bars"></i></span>
                         <div id="_mobile_cart_ft" class="sticky_top">
-                            <div class="blockcart cart-preview inactive" data-refresh-url="//demo.fieldthemes.com/techo/ps17/default/en/module/ps_shoppingcart/ajax">
+                            <div class="blockcart cart-preview inactive"
+                                data-refresh-url="//demo.fieldthemes.com/techo/ps17/default/en/module/ps_shoppingcart/ajax">
                                 <div class="click-cart">
                                     <span class="shopping-cart">
-                                        <span class="icon-handbag"><i class="fa-light fa-basket-shopping-simple"></i></span>
+                                        <span class="icon-handbag"><i
+                                                class="fa-light fa-basket-shopping-simple"></i></span>
                                         <span class="title_font text">Cart: <span class="cart-total-top">
                                                 $0.00</span></span>
                                     </span>
@@ -286,16 +289,17 @@
                                         </div>
                                     </div>
                                     <div class="card-block-top">
-                                        <a href="//demo.fieldthemes.com/techo/ps17/default/en/cart?action=show" class="view-cart">View Cart</a>
+                                        <a href="//demo.fieldthemes.com/techo/ps17/default/en/cart?action=show"
+                                            class="view-cart">View Cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <script>
-                        $(document).ready(function(){
-                            $('.menu-mb-nav > span').click(function(){
+                        $(document).ready(function () {
+                            $('.menu-mb-nav > span').click(function () {
                                 $('.megamenu-mb').slideToggle()
                             })
                         })
@@ -370,10 +374,19 @@
                                 </script>
                                 <div class="v-megamenu">
                                     <ul>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(".v-megamenuitem > span").click(function () {
+                                                    $(this).parent().find('.bottom-co').slideToggle(300);
+                                                    $(this).parent().siblings().find('.bottom-co').slideUp(300);
+                                                })
+                                            })
+                                        </script>
                                         <li class="v-megamenuitem computer-laptop id_menu2 hasChildren">
                                             <a href="#" class="menu-title"><i class="fa-light fa-display"></i><span
                                                     class="item-icon">Computer - Laptop</span></a>
-                                            <a href="#"><i class="fa-light fa-angle-right"></i></a>
+                                            <span><i class="fa-light fa-angle-right"></i><i
+                                                    class="fa-solid fa-plus"></i></span>
                                             <div class="submenu bottom-co">
                                                 <div class="sections-contaier">
                                                     <div class="v-main-section only-bottom">
@@ -449,16 +462,19 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="v-bottom-section"><a href="#"><img class="bottomimage"
-                                                                src="https://demo.fieldthemes.com/techo/ps17/default/modules/fieldvmegamenu/uploads/ver1.jpg"
-                                                                alt=""></a></div>
+                                                    <!-- <div class="v-bottom-section">
+                                                        <a href="#">
+                                                            <img class="bottomimage" src="https://demo.fieldthemes.com/techo/ps17/default/modules/fieldvmegamenu/uploads/ver1.jpg" alt="">
+                                                        </a>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </li>
                                         <li class="v-megamenuitem computer-laptop id_menu2 hasChildren">
                                             <a href="#" class="menu-title"><i class="fa-solid fa-camera"></i><span
                                                     class="item-icon">Electronics</span></a>
-                                            <a href="#"><i class="fa-light fa-angle-right"></i></a>
+                                            <span><i class="fa-light fa-angle-right"></i><i
+                                                    class="fa-solid fa-plus"></i></span>
                                             <div class="submenu bottom-co">
                                                 <div class="sections-contaier">
                                                     <div class="v-main-section only-bottom">
@@ -541,22 +557,22 @@
                                             <a href="#" class="menu-title"><i
                                                     class="fa-solid fa-mobile-screen"></i><span class="item-icon">Smart
                                                     phone & Tablets</span></a>
-                                            <a href="#"><i class="fa-light fa-angle-right"></i></a>
+                                            <span><i class="fa-light fa-angle-right"></i></span>
                                         </li>
                                         <li class="v-megamenuitem computer-laptop id_menu2 hasChildren">
                                             <a href="#" class="menu-title"><i class="fa-solid fa-shirt"></i><span
                                                     class="item-icon">Fashion & Accessories</span></a>
-                                            <a href="#"><i class="fa-light fa-angle-right"></i></a>
+                                            <span><i class="fa-light fa-angle-right"></i></span>
                                         </li>
                                         <li class="v-megamenuitem computer-laptop id_menu2 hasChildren">
                                             <a href="#" class="menu-title"><i class="fa-solid fa-heart"></i><span
                                                     class="item-icon">Health & Beauty</span></a>
-                                            <a href="#"><i class="fa-light fa-angle-right"></i></a>
+                                            <span><i class="fa-light fa-angle-right"></i></span>
                                         </li>
                                         <li class="v-megamenuitem computer-laptop id_menu2 hasChildren">
                                             <a href="#" class="menu-title"><i class="fa-solid fa-book"></i><span
                                                     class="item-icon">Books & Office</span></a>
-                                            <a href="#"><i class="fa-light fa-angle-right"></i></a>
+                                            <span><i class="fa-light fa-angle-right"></i></span>
                                         </li>
                                     </ul>
                                 </div>
@@ -662,7 +678,7 @@
 
     <!-- MEGAMENU -->
     <!-- SLIDER SHOW -->
-    <section class="slider-banner" style="display: none;">
+    <section class="slider-banner">
         <div class="swiper banner-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -693,7 +709,7 @@
             var swiper = new Swiper(".banner-slider", {});
         </script>
     </section>
-    <section id="staticbanner"style="display: none;">
+    <section id="staticbanner">
         <div class="container">
             <div class="row">
                 <div class="left_banner">
@@ -732,7 +748,7 @@
             </div>
         </div>
     </section>
-    <section class="product_top"style="display: none;">
+    <section class="product_top">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-xs-12">
@@ -1698,7 +1714,7 @@
             </div>
         </div>
     </section>
-    <section id="staticbanner2"style="display: none;">
+    <section id="staticbanner2">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
@@ -1728,7 +1744,7 @@
             </div>
         </div>
     </section>
-    <section class="tab-category-container-slider"style="display: none;">
+    <section class="tab-category-container-slider">
         <div class="container">
             <div class="block-title">
                 <h4 class="title_font title_block"><span>new arrival</span></h4>
@@ -2034,10 +2050,17 @@
             </div>
             <script>
                 var swiper = new Swiper(".tab-slider-cate", {
-                    slidesPerView: 5,
+                    slidesPerView: 1,
                     navigation: {
                         nextEl: ".swiper-button-next",
                         prevEl: ".swiper-button-prev",
+                    },
+
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 5,
+                            spaceBetween: 40,
+                        },
                     },
                 });
             </script>
@@ -2061,7 +2084,7 @@
             </script>
         </div>
     </section>
-    <section class="tabcontent fieldFullWidth block "style="display: none;">
+    <section class="tabcontent fieldFullWidth block ">
         <div class="container">
             <div class="row">
                 <div id="best-sellers_block" class="col-md-4 col-sm-12 col-xs-12 vertical_mode block clearfix">
@@ -3012,7 +3035,7 @@
             </div>
         </div>
     </section>
-    <div id="static_conact_bottom" class="block"style="display: none;">
+    <div id="static_conact_bottom" class="block">
         <div class="container">
             <div class="box_static">
                 <div class="stt_icon">
@@ -3054,7 +3077,7 @@
             </div>
         </div>
     </div>
-    <section class="home-blog smart-blog-home-post"style="display: none;">
+    <section class="home-blog smart-blog-home-post" >
         <div class="container">
             <div class="block-title">
                 <h4 class="title_block title_font"><span>Our Blog</span></h4>
@@ -3191,17 +3214,24 @@
                 <script>
                     var swiper = new Swiper(".blog-home-slider", {
                         spaceBetween: 30,
-                        slidesPerView: 3,
+                        slidesPerView: 1,
                         navigation: {
                             nextEl: ".swiper-button-next",
                             prevEl: ".swiper-button-prev",
                         },
+                        
+                        breakpoints: {
+                                        768: {
+                                            slidesPerView: 3,
+                                            spaceBetween: 40,
+                                        },
+                                    },
                     });
                 </script>
             </div>
         </div>
     </section>
-    <section class="footer-main"style="display: none;">
+    <section class="footer-main">
         <div class="container">
             <div class="brand-block">
                 <div class="swiper brandblock">
@@ -3251,8 +3281,15 @@
                     </div>
                     <script>
                         var swiper = new Swiper(".brandblock", {
-                            slidesPerView: 5,
+                            slidesPerView: 1,
+                            breakpoints: {
+                                        768: {
+                                            slidesPerView: 5,
+                                            spaceBetween: 40,
+                                        },
+                                    },
                         });
+                        
                     </script>
                 </div>
             </div>
@@ -3361,7 +3398,8 @@
                     <div class="col-md-6 col-sm-6 col-xs-12 copyright_left">
                         <p>Copyright © 2019 <a href="#">TECHO</a>. All Right Reserved.</p>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 payment_right" style="text-align: right;"><a href="#"><img class="img-responsive"
+                    <div class="col-md-6 col-sm-6 col-xs-12 payment_right" style="text-align: right;"><a href="#"><img
+                                class="img-responsive"
                                 src="https://demo.fieldthemes.com/techo/ps17/default/modules/fieldhtmlblock/images/payment_ft.png"
                                 alt=""></a></div>
                 </div>
